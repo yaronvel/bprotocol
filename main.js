@@ -115,7 +115,7 @@ let currentEndBlock = startBlock + 10;
 let maxMintData = { mintAmount: 0, address: undefined };
 
 let stop = false;
-while (currentEndBlock <= endBlock && stop === false) {
+while (currentStartBlock <= currentEndBlock && stop === false) {
   const promises = Array(10)
     .fill(null)
     .map((_, idx) => {
