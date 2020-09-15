@@ -110,7 +110,7 @@ function getCEthMintEvents(startBlock, endBlock) {
 const startBlock = 7710758;
 const endBlock = 8710758;
 
-let currentStartBlock = endBlock;
+let currentStartBlock = startBlock;
 let currentEndBlock = startBlock + 10;
 let maxMintData = { mintAmount: 0, address: undefined };
 
